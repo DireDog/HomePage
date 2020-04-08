@@ -16,34 +16,36 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="res/script/index.js"></script>
   <title>Reina Lalibertebaron</title>
 </head>
 
 <body>
   <!--Nav bar -->
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="#"><i class="fas fa-home"></i> Home</a>
+    <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> Home</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Resume </a>
+          <a class="nav-link" href="resume.html">Resume </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About </a>
+          <a class="nav-link" href="about.html">About </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Email </a>
+          <form class="form-inline">
+            <button class="btn btn-outline-success" type="button" onclick="copyEmail()">Email</button>
+          </form>
         </li>
       </ul>
     </div>
   </nav>
-  <main class="container">
 
+  <main class="container">
     <div class="row" id="splash-text">
       <div class="col-md-6" id="splash-text-left">
         <h1>Reina <br /> Lalibertebaron </h1>
@@ -52,7 +54,6 @@
         <h1>Software <br /> Programmer </h1>
       </div>
     </div>
-
     <div class="row" id="expload-btn-row">
       <div class="col-md-12" id="expload-btn">
         <button type="button" class="btn btn-primary active">careful fragile</button>
