@@ -1,0 +1,42 @@
+/* Reina Lalibertebaron*/
+/*CSS personal site */
+body {
+  background-image:url("res/img/swirl_pattern.png");
+  background-color: #cccccc;
+}
+
+#splash-text {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-size: 72px;
+  line-height: 65px;
+  margin-top: 15%;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+#splash-text-left {
+  border-right: 5px solid black;
+  text-align: right;
+}
+
+#expload-btn-row {
+  margin-top: 15%;
+}
+
+#expload-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: auto;
+}
+
+h1 {
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	line-height: 65px;
+}
+
+p {
+ font-family: 'Vollkorn', Georgia, Times, serif;
+ font-size: 16px;
+ line-height: 25px;
+}
