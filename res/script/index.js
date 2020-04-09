@@ -3,7 +3,7 @@ function copyEmail(){
   document.body.appendChild(myEmail);
 
   //myEmail.style.display = "none";
-  myEmail.value = "matthewrbaron@gmail.com";
+  myEmail.value = "matthewrbaron@gmail.com";//change deadname email address
 
   myEmail.select();
   myEmail.setSelectionRange(0, 99999);

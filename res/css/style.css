@@ -5,23 +5,6 @@ body {
   background-color: #cccccc;
 }
 
-#splash-text {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-  font-size: 72px;
-  line-height: 65px;
-  margin-top: 15%;
-  text-shadow: 1px 1px 1px #ccc;
-}
-
-#splash-text-left {
-  border-right: 5px solid black;
-  text-align: right;
-}
-
-#splash-text-right {
-  border-left: 5px solid black;
-}
-
 #expload-btn-row {
   margin-top: 15%;
 }
@@ -39,8 +22,46 @@ h1 {
 	line-height: 65px;
 }
 
+/* Nav bar customization - breaks collapse menu*/
+/*not implemented*/
+.navbar-custom {
+  background-color: lightgreen;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: green;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff; /*white*/
+}
+
 p {
  font-family: 'Vollkorn', Georgia, Times, serif;
  font-size: 16px;
  line-height: 25px;
+}
+
+#splash-text {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-size: 72px;
+  line-height: 65px;
+  margin-top: 15%;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+#splash-text-left {
+  border-right: 5px solid black;
+  text-align: right;
+}
+
+#splash-text-right {
+  border-left: 5px solid black;
 }
