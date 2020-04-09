@@ -1,7 +1,7 @@
 /* Reina Lalibertebaron*/
 /*CSS personal site */
 body {
-  background-image:url("res/img/swirl_pattern.png");
+  background-image:url("../img/swirl_pattern.png");
   background-color: #cccccc;
 }
 
@@ -16,6 +16,10 @@ body {
 #splash-text-left {
   border-right: 5px solid black;
   text-align: right;
+}
+
+#splash-text-right {
+  border-left: 5px solid black;
 }
 
 #expload-btn-row {
