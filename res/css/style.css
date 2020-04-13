@@ -25,7 +25,12 @@ h1 {
 /* Nav bar customization - breaks collapse menu*/
 /*not implemented*/
 .navbar-custom {
-  background-color: lightgreen;
+  background-color: aqua;
+}
+
+.navbar-custom .nav-item .navbar-btn{
+  background-color: aqua;
+  color: white;
 }
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
@@ -34,14 +39,16 @@ h1 {
 }
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-  color: white;
+  color: black;
 }
 
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #ffffff; /*white*/
+    color: black; /*white*/
 }
+
+
 
 p {
  font-family: 'Vollkorn', Georgia, Times, serif;
