@@ -1,11 +1,28 @@
 /* Reina Lalibertebaron*/
 /*CSS personal site */
+html, body {
+  height: 100%;
+}
+
 body {
-  background-image:url("../img/swirl_pattern.png");
   background-color: #cccccc;
+  background-image:url("../img/swirl_pattern.png");
+}
+
+.container-fluid {
+  background-color: #ffffff;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.container-fluid .row .col .btn {
+  background-color: red;
 }
 
 #expload-btn-row {
+  align-items: center;
   margin-top: 15%;
 }
 
@@ -24,31 +41,34 @@ h1 {
 
 /* Nav bar customization - breaks collapse menu*/
 /*not implemented*/
+
 .navbar-custom {
-  background-color: aqua;
+  background-color: #333333;
 }
 
 .navbar-custom .nav-item .navbar-btn{
-  background-color: aqua;
+  background-color: #333333;
   color: white;
 }
+
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-  color: green;
+  color: #ffffff;
+  margin-left: 10%;
 }
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-  color: black;
+  color: #ffffff;
+  font-size: 22px;
 }
 
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
+    background: #898989;
     color: black; /*white*/
 }
-
-
 
 p {
  font-family: 'Vollkorn', Georgia, Times, serif;
@@ -60,7 +80,7 @@ p {
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   font-size: 72px;
   line-height: 65px;
-  margin-top: 15%;
+  padding-top: 10%;
   text-shadow: 1px 1px 1px #ccc;
 }
 

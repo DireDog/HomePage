@@ -23,33 +23,28 @@
 <body>
   <!--Nav bar -->
   <nav class="navbar navbar-expand-sm navbar-custom">
-    <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> Home</a>
+
+    <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
       <i class="fa fa-bars fa-lg py-1 text-white"></i>
     </button>
-    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="resume.html">Resume</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"
-            id="toolEmail"
-            href="#"
-            data-toggle="tooltip"
-            data-placement="bottom"
-            title="Copy my Email adress to the clipboard"
-            onclick="copyEmail()"
-            trigger: "focus">
-            Email
+          <a class="nav-link" id="toolEmail" href="#" data-toggle="tooltip" data-placement="bottom" title="Copy my Email adress to the clipboard" onclick="copyEmail()" trigger: "focus">
+            Contact
           </a>
         </li>
       </ul>
@@ -57,7 +52,8 @@
   </nav>
   <!-- End Nav Bar -->
 
-  <main class="container">
+  <main class="container-fluid h-100">
+
     <div class="row" id="splash-text">
       <div class="col-lg-6" id="splash-text-left">
         <h1>Reina <br /> Lalibertebaron </h1>
@@ -67,8 +63,12 @@
       </div>
     </div>
     <div class="row" id="expload-btn-row">
-      <div class="col-md-12" id="expload-btn"><!-- TO DO -->
-        <button type="button" class="btn btn-primary active">careful fragile</button> <!-- button will cut splash banner into boxes and have them float around the screen -->
+      <div class="col text-center" id="expload-btn">
+        <!-- TO DO -->
+        <button type="button" class="btn btn-primary active">
+          careful, fragile</button>
+        <!-- button will cut splash banner into
+              boxes and have them float around the screen -->
       </div>
     </div>
 
