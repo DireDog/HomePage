@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -20,14 +21,69 @@
 </head>
 
 <body>
-  <h2>About Me</h2>
-  <!-- awfull rewrite this -->
-  <!-- say your trans? i guess about me would be the place for that?-->
-  <p>hi, im Reina and in addition to Coding i also run and dungeon master for an
-    LGBTQ dungeons and dragons group as well as enjoy painting and creating
-    custom Warhammer 40k miniatures. While in college i worked in a machinist
-    shop and have grown to love working with metal lathes as a hobby.
-  </p>
+
+  <!--Nav bar -->
+  <nav class="navbar navbar-expand-sm navbar-custom">
+    <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      <i class="fa fa-bars fa-lg py-1 text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="toolEmail" href="#" data-toggle="tooltip" data-placement="bottom" title="Copy my Email adress to the clipboard" onclick="copyEmail()" trigger: "focus">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Nav Bar -->
+  <main class="container-fluid h-100">
+    <div class="row">
+      <div class="col-lg-12" id="resume-header">
+        <h2>Hi, I’m Reina, a software programmer!</h2><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5">
+        <img src="res\img\cube.jpg" class="img-fluid" alt="a turnners cube">
+      </div>
+      <div class="col-lg-7">
+        <p>I’m based in MA, but I’ve done a lot of travelling as part of my time in the US Navy.</p>
+
+          <p>I am passionate about learning a variety of programming languages and exploring new ways to implement them. During my studies in computer science, I researched and wrote code for historic technology (ask me about the PDP-8!) in addition to
+          practicing the many neat languages on my resume.</p>
+
+          <p>Outside of my programming practice, I like to spend my time creating stories and crafting models. I have been the campaign author and dungeon master for several LGBTQ Dungeons and Dragons campaigns. Painting and crafting custom miniatures
+          is another hobby of mine. While in college I worked in a machine shop and learned to operate metal lathes, so I am skilled in sculpture.</p>
+
+          <p>With my creativity and enthusiasm for technology, I would make a great part of your engineering team. Contact me through the red link and let’s discuss how I can put my skills to work for your company!</p>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
