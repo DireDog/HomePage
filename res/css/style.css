@@ -1,7 +1,7 @@
 /* Reina Lalibertebaron*/
 /*CSS personal site */
 html, body {
-  height: 100%;
+  height: auto;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
   background-color: #ffffff;
   border-left: 2px solid black;
   border-right: 2px solid black;
+  border-bottom: 2px solid black;
   margin-left: 10%;
   width: 80%;
 }
@@ -21,11 +22,12 @@ body {
   background-color: red;
 }
 
+/*explode*/
 #expload-btn-row {
   align-items: center;
   margin-top: 15%;
 }
-
+/*explode*/
 #expload-btn {
   display: flex;
   justify-content: center;
@@ -37,6 +39,15 @@ h1 {
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 	font-size: 50px;
 	line-height: 65px;
+}
+
+h2 {
+  font-size: 44px;
+  padding-top: 40px;
+}
+
+h3 {
+  padding-top: 40px;
 }
 
 /* Nav bar customization - breaks collapse menu*/
@@ -74,6 +85,14 @@ p {
  font-family: 'Vollkorn', Georgia, Times, serif;
  font-size: 16px;
  line-height: 25px;
+}
+
+#resume-header {
+  text-align: center;
+}
+
+#skills {
+  background-color: #e6e6e6;
 }
 
 #splash-text {
