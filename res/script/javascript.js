@@ -15,7 +15,7 @@ function copyEmail() {
 }
 
 //============================================================================
-/*
+
 $(document).ready(function() {
 
   // Generate the clips. In this case I'm using 5 (or 25 pieces)
@@ -31,11 +31,14 @@ $(document).ready(function() {
     // The total is the square of the amount
     var totalSquares = Math.pow(amount, 2);
     // The HTML of the content
-    var html = $txtblc.find('#splash-text-left').html();
+    var htmlTxtL = $txtblc.find('#splash-text-left').html();
+    var htmlTxtR = $txtblc.find('#splash-text-right').html();
 
     var y = 0;
     for (var z = 0; z <= (amount * width); z = z + width) {
-      $('<div class="clipped" style="clip: rect(' + y + 'px, ' + (z + width) + 'px, ' + (y + height) + 'px, ' + z + 'px)">' + html + '</div>').appendTo($txtblc);
+      $('<div class="clipped" style="clip: rect(' + y + 'px, ' + (z + width) +
+      'px, ' + (y + height) + 'px, ' + z + 'px)">' + htmlTxtL +
+      '<div>').appendTo($txtblc);
       if (z === (amount * width) - width) {
         y = y + height;
         z = -width;
@@ -56,15 +59,15 @@ $(document).ready(function() {
     clicked = false;
 
   // On click
-  $('.clipped-box div').on('click', function() {
+  $('#splash-text div').on('click', function() {
     if (clicked === false) {
       clicked = true;
-      $('.clipped-box .content').css({
+      $('#splash-text-left').css({
         'display': 'none'
       });
 
       // Apply to each clipped-box div.
-      $('.clipped-box div:not(.content)').each(function() {
+      $('#splash-text div:not(#splash-text-left)').each(function() {
 
         // So the speed is a random speed between 90m/s and 120m/s. I know that seems like a lot
         // But otherwise it seems too slow. That's due to how I handled the timeout.
@@ -137,7 +140,7 @@ $(document).ready(function() {
             first = true;
 
 
-            $('.clipped-box').css({
+            $('#splash-text').css({
               'top': '-1000px',
               'transition': 'none'
             });
@@ -175,17 +178,17 @@ $(document).ready(function() {
       // I've just put this in so the deleted box will come down again after its been clicked.
       // That way you can keep pressing delete.
 
-      $('.clipped-box').css({
+      $('#splash-text').css({
         'top': '0',
         'transition': ''
       });
-      $('.clipped-box div').css({
+      $('#splash-text div').css({
         'opacity': '1',
         'transition': '',
         'background-color': ''
       });
 
-      $('.content').css({
+      $('#splash-text-left').css({
         'display': 'block'
       });
 
@@ -195,4 +198,3 @@ $(document).ready(function() {
 
   }, 300);
 });
-*/

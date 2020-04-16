@@ -22,13 +22,41 @@ body {
   background-color: red;
 }
 
+.container-fluid .row .splash-text {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-size: 72px;
+  line-height: 65px;
+  padding-top: 10%;
+  position: absolute;
+  text-shadow: 1px 1px 1px #ccc;
+  -webkit-transition: -webkit-transform 1.4s ease-in, background 0.3s ease-in;
+	transition: transform 1.4s ease-in, background 0.3s ease-in;
+}
+
+.container-fluid .row .splash-left {
+  border-right: 5px solid black;
+  text-align: right;
+}
+
+.container-fluid .row .splash-right {
+  border-left: 5px solid black;
+}
+
+.container-fluid .row .resume-header {
+  text-align: center;
+}
+
+.container-fluid .row .skills {
+  background-color: #e6e6e6;
+}
+
 /*explode*/
-#expload-btn-row {
+.container-fluid .explode-btn-row {
   align-items: center;
   margin-top: 15%;
 }
 /*explode*/
-#expload-btn {
+.container-fluid .row .explode-btn {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -90,29 +118,4 @@ p {
  font-family: 'Vollkorn', Georgia, Times, serif;
  font-size: 16px;
  line-height: 25px;
-}
-
-#resume-header {
-  text-align: center;
-}
-
-#skills {
-  background-color: #e6e6e6;
-}
-
-#splash-text {
-  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-  font-size: 72px;
-  line-height: 65px;
-  padding-top: 10%;
-  text-shadow: 1px 1px 1px #ccc;
-}
-
-#splash-text-left {
-  border-right: 5px solid black;
-  text-align: right;
-}
-
-#splash-text-right {
-  border-left: 5px solid black;
 }
