@@ -14,9 +14,13 @@ body {
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   border-right: 2px solid black;
-
+  position: relative;
   margin-left: 10%;
   width: 80%;
+}
+
+.splash {
+  padding-top: 10%;
 }
 
 .container-fluid .row .col .btn {
@@ -24,14 +28,10 @@ body {
 }
 
 .container-fluid .row .splash-text {
+  cursor: pointer;
   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
   font-size: 72px;
   line-height: 65px;
-  padding-top: 10%;
-  position: absolute;
-  text-shadow: 1px 1px 1px #ccc;
-  -webkit-transition: -webkit-transform 1.4s ease-in, background 0.3s ease-in;
-	transition: transform 1.4s ease-in, background 0.3s ease-in;
 }
 
 .container-fluid .row .splash-left {
@@ -55,6 +55,7 @@ body {
 .container-fluid .explode-btn-row {
   align-items: center;
   margin-top: 15%;
+  padding-bottom: 50px;
 }
 /*explode*/
 .container-fluid .row .explode-btn {
