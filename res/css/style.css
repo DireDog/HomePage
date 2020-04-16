@@ -11,9 +11,10 @@ body {
 
 .container-fluid {
   background-color: #ffffff;
+  border-bottom: 2px solid black;
   border-left: 2px solid black;
   border-right: 2px solid black;
-  border-bottom: 2px solid black;
+
   margin-left: 10%;
   width: 80%;
 }
@@ -105,6 +106,10 @@ img {
 .navbar-custom .navbar-nav .nav-link {
   color: #ffffff;
   font-size: 22px;
+}
+
+.navbar-custom .navbar-nav .contact-item .nav-link {
+  color: #FF0000;
 }
 
 /* change the color of active or hovered links */
