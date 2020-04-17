@@ -16,12 +16,16 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="res/script/javascript.js">try{Typekit.load();}catch(e){}</script>
+  <script defer src="res/script/javascript.js">
+    try {
+      Typekit.load();
+    } catch (e) {}
+  </script>
   <title>Reina Lalibertebaron</title>
 </head>
 
 <body>
-  <!--Nav bar -->
+  <!--Nav bar-->
   <nav class="navbar navbar-expand-sm navbar-custom">
     <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -43,14 +47,20 @@
           <a class="nav-link" id="toolEmail" href="#" data-toggle="tooltip" data-placement="bottom" title="Copy my Email adress to the clipboard" onclick="copyEmail()" trigger: "focus">
             Contact
           </a>
-        </li>
       </ul>
     </div>
   </nav>
   <!-- End Nav Bar -->
   <main class="container-fluid splash h-100">
 
-    <!-- break -->
+    <div class="row switch-row">
+      <label class="switch" for="checkbox">
+        <input type="checkbox" id="checkbox"/>
+        <div class="slider round"></div>
+      </label>
+      <p class="switch-text">Enable Dark Mode</p>
+    </div>
+
     <div class="row splash-text">
       <div class="col-lg-6 splash-left">
         <h1>Reina <br /> Lalibertebaron </h1>
@@ -59,17 +69,23 @@
         <h1>Software <br /> Programmer </h1>
       </div>
     </div>
+
     <div class="row explode-btn-row">
       <div class="col explode-btn">
         <!-- TO DO
         <button type="button" class="btn btn-primary active">
           careful, fragile</button>
-         button will cut splash banner into
-              boxes and have them float around the screen -->
+        -->
       </div>
     </div>
 
   </main>
 
+
+
+
+
+
 </body>
+
 </html>

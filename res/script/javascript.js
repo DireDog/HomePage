@@ -15,3 +15,27 @@ function copyEmail() {
 }
 
 //============================================================================
+const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+console.log("flag 1");
+
+if (currentTheme) {
+  console.log("flag A1");
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+  console.log("flag B1");
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
