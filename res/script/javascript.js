@@ -113,4 +113,20 @@ function addNavBar() {
   element = document.getElementById("nav-li-resume");
   element.appendChild(elem);
   document.getElementById("nav-li-resume").href = "resume.html";
+
+  //***
+  elem = document.createElement('li');
+  elem.setAttribute('class','nav-item');
+  elem.setAttribute('id','nav-li-contact');
+  element = document.getElementById("nav-ul-0");
+  element.appendChild(elem);
+
+  elem = document.createElement('a');
+  elem.setAttribute('class','nav-link');
+  elem.setAttribute('id','nav-link-4');
+  elem.setAttribute('href','contact.html');
+  elem.textContent = "Contact Me";
+  element = document.getElementById("nav-li-contact");
+  element.appendChild(elem);
+  document.getElementById("nav-li-contact").href = "contact.html";
 }
